@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Even number</title>
+  </head>
+  <body>
+    <form name="hsm">
+      Enter a number:<input type="number" name="a"><br>
+      <input type="button" value="submit" onclick="even()">
+    </form>
+    <script>
+      function even() 
+      {
+        var a = parseInt(document.hsm.a.value);
+        var i;
+        for (i = 2; i <= a; i = i + 2) 
+        {
+          document.write(i + " ");
+        }
+      }
+    </script>
+  </body>
+</html>
