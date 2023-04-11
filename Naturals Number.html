@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Natural number</title>
+  </head>
+  <body>
+    <form name="hsm">
+      Enter a number:<input type="number" name="a" /><br />
+      <input type="button" value="submit" onclick="natural()">
+    </form>
+    <script>
+      function natural() 
+      {
+        var a = parseInt(document.hsm.a.value);
+        var i;
+        for (i = 1; i <= a; i++) 
+        {
+          document.write(i + " ");
+        }
+      }
+    </script>
+  </body>
+</html>
