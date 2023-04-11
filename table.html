@@ -1,0 +1,24 @@
+<!-- WAP to enter a number and find its multiplication table -->
+<html>
+  <head>
+    <title>Multiplication Table</title>
+  </head>
+  <body>
+    <form name="hsm">
+      Enter a number:<input type="number" name="a"><br>
+      <input type="button" value="submit" onclick="table()">
+    </form>
+    <script>
+      function table() 
+      {
+        var a = parseInt(document.hsm.a.value);
+        var i, m;
+        for (i = 1; i <= 10; i++) 
+        {
+          m = a * i;
+          document.write(a + "x" + i + "=" + m + "<br>");
+        }
+      }
+    </script>
+  </body>
+</html>
